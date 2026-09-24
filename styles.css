@@ -21,11 +21,13 @@ main{
     background-color: #333;
     border-radius: 10px;
     border: 5px solid black;
+    gap: 10px;
 }
 header{
     flex: 0 0 100%;
 }
 header h1{
+    margin-top: 5px;
     text-align: center;
     font-weight: bold;
 }
@@ -60,8 +62,13 @@ li a{
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(255, 84, 84);
+    transition: all 0.3s;
+    font-weight: bold;
 }
-
+li a:hover{
+    background-color: white;
+    color: rgb(255, 84, 84);
+}
 article{
     flex: 1;
     display: flex;
@@ -77,6 +84,7 @@ article{
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
+    border: 2px solid white;
 }
 .card img{
     flex: 0 0 200px;
@@ -87,6 +95,9 @@ article{
 }
 aside{
     flex: 0 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 aside img{
     max-height: 500px;
@@ -99,4 +110,5 @@ footer{
     flex: 0 0 100%;
     text-align: center;
     padding: 10px;
+    font-weight: bold;
 }
